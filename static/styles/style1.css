@@ -1,0 +1,141 @@
+<style>
+
+.headlineText
+{
+    font-family: verdana, sans-serif;
+    text-align: center;
+    font-size:30px;
+    padding:3px;
+    color:yellow;
+}
+
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input
+{
+    font-size:20px;
+    padding:3px;
+    color:brown;
+}
+
+button
+{
+    width: 150px;
+    height: 30px;
+    padding:3px;
+}
+
+button:hover
+{
+    color:"green";
+}
+
+@media (min-width: 500px)
+{
+    body
+    {
+       /*background: yellow;*/
+    }
+}
+
+@media (max-width: 900px)
+{
+    body
+    {
+        /*background: yellow;*/
+    }
+}
+ 
+/* Login section */ 
+#loginForm
+{
+    font-family: verdana, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    color: yellow;
+    background: teal;
+    border: 3px solid darkgreen;
+    width:auto;
+    height:auto;
+}
+
+/* Behavior of selected text within div */
+div::selection
+{
+    color: red;
+    background-color: yellow;
+}
+
+/* grid class */
+.grid
+{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: auto auto auto;
+}
+
+/* grid-item class */
+.grid-item
+{
+    font-family: verdana;
+    font-size: 15px;
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    background: pink;
+    border: 3px solid red;
+}
+
+/* Paragraph selection */
+p::selection
+{
+    color: yellow;
+    background-color: green;
+    font-family: courier;
+}
+
+
+/* User table section */
+.userTable
+{
+    font-family: verdana, sans-serif;
+    color: yellow;
+    margin: 10px;
+    padding: 10px;
+    background: teal;
+    border: 3px solid darkgreen;
+    width: auto;
+    height: auto;
+}
+
+/* Table styling */
+table
+{
+border: 2px solid black;
+border-collapse: collapse;
+}
+
+th
+{
+border: 1px solid black;
+padding: 10px;
+text-align: center;
+background: lightgreen;
+}
+
+tr,td
+{
+border: 1px solid black;
+padding: 10px;
+text-align: center;
+background: yellow;
+}
+
+
+</style>
