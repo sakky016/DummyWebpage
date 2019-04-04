@@ -10,16 +10,27 @@
 
 <body>
 
+<div class="headlineText">
 {{headline}}
+</div>
+
+<h3>
+<!-- using variable passed from app.py -->
+<ul>
+    {% for name in names %}
+        <li>{{name}}</li>
+    {% endfor %}
+</ul>
+</h3>    
 
 <!-- Form -->
-<form id="loginForm">
+<form id="loginForm" action="{{url_for('login')}}" method="post">
     <h2>Login </h2><br>
     <h3>
     Username: <input name="nameText" type="text" placeholder="enter your name"><br><br>
     Password: <input name="passwordText" type="password" placeholder="enter your Password"><br><br>
-    <button name="loginButton" type="button">Login</button>   
-    <button name="resetButton" type="button">Reset</button>
+    <button name="loginButton" type="submit">Login</button>   
+    <button name="resetButton" type="clear">Reset</button>
     </h3>
 </form>
 

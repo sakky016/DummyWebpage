@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Take Notes</title>
+<body>
+<h1>Welcome {{user}} to TakeNotes</h1>
+
+<!-- Form -->
+<form id="takeNoteForm" action="{{url_for('take_notes')}}" method="post">
+    <input name="noteText" type="text" placeholder="Enter notes">
+    <button name="record" type="submit">Record</button>   
+</form>
+
+<h3>
+<!-- using variable passed from app.py -->
+<ul>
+    {% for word in words %}
+        <li>{{word}}</li>   
+    {% endfor %}
+</ul>
+</h3>   
+
+</body>
+</html>
